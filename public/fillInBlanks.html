@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The 12 Guards - Exercise</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style type="text/tailwindcss">
+    @layer base {
+      :root {
+        --prim-purple: #7f13ec;
+        --prim-purple-darker: #2d1b43;
+        --prim-purple-light: #f7f2ff;
+        --prim-purple-accent: #362348;
+        --text-main: #141414;
+        --text-subtle: #6b6b6b;
+        --text-main-dark: #ffffff;
+        --text-subtle-dark: #a0a0a0;
+        --bg-main: #ffffff;
+        --bg-main-dark: #191022;
+        --success: #34d399;
+        --error: #ef4444;
+      }
+    }
+  </style>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "prim-purple": "var(--prim-purple)",
+            "prim-purple-darker": "var(--prim-purple-darker)",
+            "prim-purple-light": "var(--prim-purple-light)",
+            "prim-purple-accent": "var(--prim-purple-accent)",
+            "text-main": "var(--text-main)",
+            "text-subtle": "var(--text-subtle)",
+            "text-main-dark": "var(--text-main-dark)",
+            "text-subtle-dark": "var(--text-subtle-dark)",
+            "bg-main": "var(--bg-main)",
+            "bg-main-dark": "var(--bg-main-dark)",
+            "success": "var(--success)",
+            "error": "var(--error)",
+          },
+          fontFamily: {
+            "display": ["Lexend", "sans-serif"]
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-gray-50 font-display flex justify-center items-start min-h-screen">
+<div class="w-full max-w-[393px] mx-auto bg-bg-main flex flex-col h-[852px]">
+<header class="flex items-center justify-between p-4 border-b border-gray-200">
+<button class="p-2 -ml-2">
+<span class="material-symbols-outlined text-text-main">arrow_back</span>
+</button>
+<h1 class="text-lg font-semibold text-text-main">The 12 Guards</h1>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-prim-purple">shield</span>
+<span class="font-semibold text-text-main">15</span>
+</div>
+</header>
+<main class="flex-1 flex flex-col p-6 space-y-8">
+<div class="flex items-center gap-3">
+<div class="w-full bg-gray-200 rounded-full h-2.5">
+<div class="bg-prim-purple h-2.5 rounded-full" style="width: 50%"></div>
+</div>
+<button class="p-2 -mr-2">
+<span class="material-symbols-outlined text-text-subtle">close</span>
+</button>
+</div>
+<h2 class="text-xl font-semibold text-text-main">Fill in the blank</h2>
+<div class="space-y-8">
+<p class="text-xl font-medium text-text-main leading-relaxed">La Posta di ___, la ___, e la ___.</p>
+<div class="grid grid-cols-2 gap-3">
+<button class="col-span-1 py-3 px-2 bg-prim-purple-light text-prim-purple rounded-xl font-medium border border-prim-purple/20">Donna</button>
+<button class="col-span-1 py-3 px-2 bg-prim-purple-light text-prim-purple rounded-xl font-medium ring-2 ring-error">Fenestra</button>
+<button class="col-span-1 py-3 px-2 bg-prim-purple-light text-prim-purple rounded-xl font-medium border border-prim-purple/20">Serpentino</button>
+<button class="col-span-1 py-3 px-2 bg-prim-purple-light text-prim-purple rounded-xl font-medium border border-prim-purple/20">Coda Lunga</button>
+<button class="col-span-2 py-3 px-2 bg-success text-white rounded-xl font-medium">Porta di Ferro</button>
+</div>
+</div>
+</main>
+<footer class="p-6 border-t border-gray-200">
+<div class="w-full bg-success/10 p-4 rounded-xl mb-4">
+<p class="text-center font-bold text-success">Correct!</p>
+</div>
+<button class="w-full py-3 bg-prim-purple text-white font-bold rounded-xl">Continue</button>
+</footer>
+<nav class="flex justify-around items-center p-2 border-t border-gray-200">
+<a class="flex flex-col items-center text-text-subtle hover:text-prim-purple" href="#">
+<span class="material-symbols-outlined">explore</span>
+<span class="text-xs">Quests</span>
+</a>
+<a class="flex flex-col items-center text-prim-purple" href="#">
+<span class="material-symbols-outlined">school</span>
+<span class="text-xs font-bold">Learn</span>
+</a>
+<a class="flex flex-col items-center text-text-subtle hover:text-prim-purple" href="#">
+<span class="material-symbols-outlined">bar_chart</span>
+<span class="text-xs">Progress</span>
+</a>
+<a class="flex flex-col items-center text-text-subtle hover:text-prim-purple" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs">Profile</span>
+</a>
+</nav>
+</div>
+
+</body></html>

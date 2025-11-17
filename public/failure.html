@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Incorrect Feedback</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#6A5AE0",
+                        "background-light": "#F8F7FA",
+                        "background-dark": "#191022",
+                        "text-light": "#333333",
+                        "text-dark": "#F8F7FA",
+                        "accent-negative": "#E54D4D"
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="mx-auto flex h-screen max-w-[393px] flex-col overflow-hidden bg-background-light dark:bg-background-dark">
+<!-- Top App Bar & Progress -->
+<header class="flex flex-col gap-2 px-4 pt-4">
+<div class="flex items-center justify-between">
+<button class="flex size-10 items-center justify-center rounded-full">
+<span class="material-symbols-outlined text-text-light dark:text-text-dark">close</span>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold text-text-light dark:text-text-dark">The 12 Guards</h1>
+<div class="size-10"></div> <!-- Spacer -->
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="h-2 rounded-full bg-primary/20">
+<div class="h-2 rounded-full bg-primary" style="width: 50%;"></div>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex flex-1 flex-col items-center justify-center px-4 text-center">
+<div class="flex flex-col items-center gap-4">
+<div class="flex size-24 items-center justify-center rounded-full bg-accent-negative/10">
+<span class="material-symbols-outlined text-5xl text-accent-negative">close</span>
+</div>
+<h2 class="text-3xl font-bold text-accent-negative">Incorrect!</h2>
+<p class="text-base text-text-light/70 dark:text-text-dark/70">Let's try the next one. Keep going!</p>
+</div>
+</main>
+<!-- Action Button -->
+<footer class="w-full p-4">
+<button class="flex h-14 w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl bg-primary text-base font-bold text-white shadow-lg shadow-primary/30">
+<span>Next Question</span>
+</button>
+</footer>
+</div>
+</body></html>

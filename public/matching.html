@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The 12 Guards</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#6B46C1", // prim-purple
+              "background-light": "#F7FAFC", // Light gray background
+              "background-dark": "#1A202C", // Dark gray background
+            },
+            fontFamily: {
+              display: ["Roboto", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "1.25rem", // 20px
+            },
+          },
+        },
+      };
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="max-w-sm mx-auto flex flex-col h-screen p-4">
+<header class="flex items-center justify-between py-2 mb-4">
+<button class="p-2">
+<span class="material-symbols-outlined">arrow_back_ios_new</span>
+</button>
+<h1 class="text-xl font-bold text-gray-900 dark:text-white">The 12 Guards</h1>
+<button class="p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<div class="mb-6 px-2">
+<div class="flex justify-between items-center mb-1">
+<span class="text-transparent">0%</span> 
+<span class="text-sm font-medium text-gray-500 dark:text-gray-400">50%</span>
+</div>
+<div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+<div class="bg-primary h-2 rounded-full" style="width: 50%"></div>
+</div>
+</div>
+<main class="flex-grow flex flex-col items-center">
+<h2 class="text-xl font-bold text-center mb-6 text-gray-900 dark:text-white">Match the correct image to the HEMA term</h2>
+<div class="grid grid-cols-3 gap-3 w-full max-w-xs mb-8">
+<div class="aspect-square bg-gray-200 dark:bg-gray-700 rounded-2xl"></div>
+<div class="aspect-square bg-gray-200 dark:bg-gray-700 rounded-2xl"></div>
+<div class="aspect-square bg-gray-200 dark:bg-gray-700 rounded-2xl"></div>
+<div class="aspect-square bg-gray-200 dark:bg-gray-700 rounded-2xl"></div>
+<div class="aspect-square bg-gray-200 dark:bg-gray-700 rounded-2xl"></div>
+<div class="aspect-square bg-primary rounded-2xl shadow-lg"></div>
+<div class="aspect-square bg-gray-200 dark:bg-gray-700 rounded-2xl"></div>
+<div class="aspect-square bg-gray-200 dark:bg-gray-700 rounded-2xl"></div>
+<div class="aspect-square bg-gray-200 dark:bg-gray-700 rounded-2xl"></div>
+<div class="aspect-square bg-gray-200 dark:bg-gray-700 rounded-2xl flex items-center justify-center p-2">
+<span class="text-center text-sm font-medium text-gray-800 dark:text-gray-200">Posta Frontale</span>
+</div>
+<div class="aspect-square bg-gray-200 dark:bg-gray-700 rounded-2xl"></div>
+<div class="aspect-square bg-gray-200 dark:bg-gray-700 rounded-2xl"></div>
+</div>
+<div class="flex items-center justify-center space-x-2 mb-8">
+<div class="w-8 h-2 rounded-full bg-primary"></div>
+<div class="w-8 h-2 rounded-full bg-gray-300 dark:bg-gray-600"></div>
+<div class="w-8 h-2 rounded-full bg-gray-300 dark:bg-gray-600"></div>
+<div class="w-8 h-2 rounded-full bg-gray-300 dark:bg-gray-600"></div>
+<div class="w-8 h-2 rounded-full bg-gray-300 dark:bg-gray-600"></div>
+<div class="w-8 h-2 rounded-full bg-gray-300 dark:bg-gray-600"></div>
+<div class="w-8 h-2 rounded-full bg-gray-300 dark:bg-gray-600"></div>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1, 'wght' 700;">workspace_premium</span>
+</div>
+</main>
+<footer class="w-full pb-4">
+<button class="w-full bg-primary text-white font-bold py-4 rounded-full text-lg mb-3">
+                Hint
+            </button>
+<button class="w-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 font-bold py-4 rounded-full text-lg">
+                Skip
+            </button>
+</footer>
+</div>
+
+</body></html>

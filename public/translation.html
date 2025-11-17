@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The 12 Guards - Translation Quiz</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style type="text/tailwindcss">
+    @layer base {
+      :root {
+        --background: 260 0% 100%;
+        --foreground: 260 50% 8%;
+        --card: 260 0% 100%;
+        --card-foreground: 260 50% 8%;
+        --popover: 260 0% 100%;
+        --popover-foreground: 260 50% 8%;
+        --primary: 265 83% 51%;
+        --primary-foreground: 260 50% 95%;
+        --secondary: 260 20% 96%;
+        --secondary-foreground: 260 50% 20%;
+        --muted: 260 20% 96%;
+        --muted-foreground: 260 50% 60%;
+        --accent: 260 20% 96%;
+        --accent-foreground: 260 50% 20%;
+        --destructive: 0 84% 60%;
+        --destructive-foreground: 0 0% 100%;
+        --border: 260 20% 85%;
+        --input: 260 20% 85%;
+        --ring: 265 83% 51%;
+        --radius: 0.75rem;
+      }
+    }
+  </style>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            border: "hsl(var(--border))",
+            input: "hsl(var(--input))",
+            ring: "hsl(var(--ring))",
+            background: "hsl(var(--background))",
+            foreground: "hsl(var(--foreground))",
+            primary: {
+              DEFAULT: "hsl(var(--primary))",
+              foreground: "hsl(var(--primary-foreground))",
+            },
+            secondary: {
+              DEFAULT: "hsl(var(--secondary))",
+              foreground: "hsl(var(--secondary-foreground))",
+            },
+            destructive: {
+              DEFAULT: "hsl(var(--destructive))",
+              foreground: "hsl(var(--destructive-foreground))",
+            },
+            muted: {
+              DEFAULT: "hsl(var(--muted))",
+              foreground: "hsl(var(--muted-foreground))",
+            },
+            accent: {
+              DEFAULT: "hsl(var(--accent))",
+              foreground: "hsl(var(--accent-foreground))",
+            },
+            popover: {
+              DEFAULT: "hsl(var(--popover))",
+              foreground: "hsl(var(--popover-foreground))",
+            },
+            card: {
+              DEFAULT: "hsl(var(--card))",
+              foreground: "hsl(var(--card-foreground))",
+            },
+            "prim-purple": {
+              "50": "#fbf5ff",
+              "100": "#f4e6ff",
+              "200": "#e9d0ff",
+              "300": "#d9b0ff",
+              "400": "#c386ff",
+              "500": "#ac59ff",
+              "600": "#9b37f8",
+              "700": "#8a1ee9",
+              "800": "#7f13ec",
+              "900": "#620cbf",
+              "950": "#44068c"
+            }
+          },
+          fontFamily: {
+            display: ["Lexend", "sans-serif"],
+          },
+          borderRadius: {
+            lg: "var(--radius)",
+            md: "calc(var(--radius) - 2px)",
+            sm: "calc(var(--radius) - 4px)",
+            xl: "calc(var(--radius) + 4px)",
+            "2xl": "calc(var(--radius) + 8px)",
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-prim-purple-50 flex justify-center">
+<div class="relative flex h-auto min-h-dvh w-full max-w-[393px] flex-col bg-background font-display text-foreground">
+<header class="sticky top-0 z-20 bg-background/80 backdrop-blur-sm">
+<div class="flex h-16 items-center justify-between px-4">
+<button class="grid h-10 w-10 place-items-center rounded-full">
+<span class="material-symbols-outlined text-2xl text-foreground/60">close</span>
+</button>
+<h1 class="text-lg font-semibold text-prim-purple-900">Translation Quiz</h1>
+<div class="flex items-center gap-2 rounded-full bg-prim-purple-100 px-3 py-1.5">
+<span class="material-symbols-outlined text-2xl text-prim-purple-700">timer</span>
+<span class="font-semibold text-prim-purple-900">2:48</span>
+</div>
+</div>
+<div class="px-4 pb-3">
+<div class="relative h-3 w-full rounded-full bg-prim-purple-100">
+<div class="absolute left-0 top-0 h-3 w-1/2 rounded-full bg-prim-purple-600"></div>
+</div>
+</div>
+</header>
+<main class="flex-grow flex flex-col px-4 pt-8 pb-4">
+<div class="text-center">
+<p class="text-lg font-medium text-muted-foreground">Translate this phrase</p>
+<h2 class="text-3xl font-bold text-prim-purple-950 mt-2">The Iron Gate</h2>
+</div>
+<div class="flex-grow flex flex-col justify-center gap-3 mt-8">
+<button class="flex w-full items-center justify-center rounded-xl border border-prim-purple-200 bg-white px-5 py-4 text-lg font-semibold text-prim-purple-950 shadow-sm transition-colors hover:bg-prim-purple-50">
+          Porta di Ferro
+        </button>
+<button class="flex w-full items-center justify-center rounded-xl border border-prim-purple-200 bg-white px-5 py-4 text-lg font-semibold text-prim-purple-950 shadow-sm transition-colors hover:bg-prim-purple-50">
+          La Guardia Alta
+        </button>
+<button class="flex w-full items-center justify-center rounded-xl border border-prim-purple-200 bg-white px-5 py-4 text-lg font-semibold text-prim-purple-950 shadow-sm transition-colors hover:bg-prim-purple-50">
+          La Finestra
+        </button>
+</div>
+</main>
+<footer class="sticky bottom-0 z-20 mt-auto border-t border-border bg-background/80 backdrop-blur-sm">
+<nav class="flex h-24 items-center justify-around px-4">
+<a class="flex flex-col items-center gap-1.5 text-muted-foreground transition-colors hover:text-prim-purple-700" href="#">
+<span class="material-symbols-outlined text-3xl">school</span>
+<span class="text-xs font-medium">Learn</span>
+</a>
+<a class="flex flex-col items-center gap-1.5 text-prim-purple-700" href="#">
+<span class="material-symbols-outlined text-3xl">swords</span>
+<span class="text-xs font-bold">Quests</span>
+</a>
+<a class="flex flex-col items-center gap-1.5 text-muted-foreground transition-colors hover:text-prim-purple-700" href="#">
+<span class="material-symbols-outlined text-3xl">shield</span>
+<span class="text-xs font-medium">Guards</span>
+</a>
+<a class="flex flex-col items-center gap-1.5 text-muted-foreground transition-colors hover:text-prim-purple-700" href="#">
+<span class="material-symbols-outlined text-3xl">person</span>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

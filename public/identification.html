@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Fencer Identification Quiz</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  </style>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "prim-purple": {
+              "DEFAULT": "#5A4FCF",
+              "light": "#F8F7FF",
+              "dark": "#191022",
+              "text-light": "#2C2A4A",
+              "text-dark": "#F8F7FF",
+              "subtle-light": "#AEA8D3",
+              "subtle-dark": "#4d3267"
+            },
+          },
+          fontFamily: {
+            "display": ["Lexend", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-prim-purple-light font-display flex justify-center">
+<div class="relative flex h-auto min-h-screen w-full max-w-[393px] flex-col bg-prim-purple-light text-prim-purple-text-light">
+<header class="flex flex-col p-4">
+<div class="flex h-12 items-center justify-between">
+<div class="flex size-12 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-3xl text-prim-purple-text-light">arrow_back</span>
+</div>
+<h1 class="text-prim-purple-text-light text-lg font-bold">Fencer Identification</h1>
+<div class="flex size-12 shrink-0 items-center justify-center">
+</div>
+</div>
+</header>
+<div class="flex items-center gap-3 px-4 pb-4">
+<div class="h-2 flex-1 rounded-full bg-prim-purple-subtle-light/30">
+<div class="h-2 rounded-full bg-prim-purple" style="width: 50%;"></div>
+</div>
+<span class="text-sm font-semibold text-prim-purple-subtle-light">50%</span>
+</div>
+<main class="flex flex-1 flex-col px-4">
+<h2 class="pb-3 pt-5 text-center text-[22px] font-bold leading-tight tracking-tight text-prim-purple-text-light">Which Fencer is in Porte Di Ferro?</h2>
+<div class="flex flex-1 items-center py-3">
+<div class="aspect-[4/5] w-full overflow-hidden rounded-xl bg-prim-purple-subtle-light/30">
+<img alt="Two fencers practicing HEMA with longswords, one in a guard position." class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAj21lgCB8cSQkp5pFAaexWoPu83gIzSO1AAexiMgAPrS_okRaaVux3F1zgqGhtsfzEW3ZmzJ0CoBojRFU_U4JDYuO24GeSHzD3toCvteTf3AjEAusuhG7KKrvvhYdQSwCCTiSKSjXxGd6NOXx4XqYyKyhuOekQLUFUzGOoHtEPXsKgHjIJQc3hE3iYIc7-rgLEhGefmN2xjQyDhfBnVROhIXwIdLi4aIXqlTHWA1vuJhG2IRF7y_jzyO9wjovVQky-yRkfa9pEVqp"/>
+</div>
+</div>
+<div class="flex flex-col justify-end gap-4 py-3">
+<div class="grid grid-cols-2 gap-4">
+<button class="flex h-32 flex-1 cursor-pointer items-center justify-center overflow-hidden rounded-xl border border-gray-200 bg-white px-5 text-lg font-bold leading-normal tracking-[0.015em] text-prim-purple-text-light shadow-sm">
+<span class="truncate">Left</span>
+</button>
+<button class="flex h-32 flex-1 cursor-pointer items-center justify-center overflow-hidden rounded-xl bg-prim-purple px-5 text-lg font-bold leading-normal tracking-[0.015em] text-white shadow-sm">
+<span class="truncate">Right</span>
+</button>
+</div>
+</div>
+</main>
+<footer class="p-4 pt-2 pb-8">
+<button class="flex h-14 w-full cursor-pointer items-center justify-center overflow-hidden rounded-full border-2 border-prim-purple-subtle-light bg-transparent px-5 text-lg font-bold leading-normal tracking-[0.015em] text-prim-purple-subtle-light">
+<span class="truncate">Skip</span>
+</button>
+</footer>
+<nav class="sticky bottom-0 z-10 flex h-[83px] w-full items-center justify-around border-t border-black/10 bg-prim-purple-light/80 backdrop-blur-lg">
+<div class="flex flex-col items-center gap-1 text-prim-purple-subtle-light">
+<span class="material-symbols-outlined text-3xl">home</span>
+<span class="text-[10px] font-bold">HOME</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-prim-purple">
+<span class="material-symbols-outlined text-3xl">sword_rose</span>
+<span class="text-[10px] font-bold">QUESTS</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-prim-purple-subtle-light">
+<span class="material-symbols-outlined text-3xl">school</span>
+<span class="text-[10px] font-bold">ACADEMY</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-prim-purple-subtle-light">
+<span class="material-symbols-outlined text-3xl">person</span>
+<span class="text-[10px] font-bold">PROFILE</span>
+</div>
+</nav>
+</div>
+
+</body></html>
