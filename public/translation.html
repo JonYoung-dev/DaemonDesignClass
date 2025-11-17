@@ -2,7 +2,7 @@
 <html lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>The 12 Guards - Translation Quiz</title>
+<title>Posta Di Idiota - Translation</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
@@ -83,18 +83,36 @@
               "800": "#7f13ec",
               "900": "#620cbf",
               "950": "#44068c"
-            }
+            },
+            "prim-purple": {
+                DEFAULT: "#7000F0",
+                100: "#F4E6FF",
+                200: "#E3BFFF",
+                300: "#D299FF",
+                400: "#C172FF",
+                500: "#B04CFF",
+                600: "#A026FF",
+                700: "#8F00FF",
+                800: "#7000F0",
+                900: "#5A00C2",
+              },
+              "prim-gray": {
+                DEFAULT: "#585858",
+                100: "#F6F6F6",
+                200: "#E8E8E8",
+                300: "#D9D9D9",
+                400: "#CBCBCB",
+                500: "#ACACAC",
+                600: "#8D8D8D",
+                700: "#6F6F6F",
+                800: "#585858",
+                900: "#444444",
+              },
           },
-          fontFamily: {
-            display: ["Lexend", "sans-serif"],
-          },
-          borderRadius: {
-            lg: "var(--radius)",
-            md: "calc(var(--radius) - 2px)",
-            sm: "calc(var(--radius) - 4px)",
-            xl: "calc(var(--radius) + 4px)",
-            "2xl": "calc(var(--radius) + 8px)",
-          },
+   fontFamily: {
+              display: ["Helvetica", "sans-serif"],
+            },
+
         },
       },
     }
@@ -110,26 +128,35 @@
     }
   </style>
   </head>
-<body class="bg-prim-purple-50 flex justify-center">
-<div class="relative flex h-auto min-h-dvh w-full max-w-[393px] flex-col bg-background font-display text-foreground">
-<header class="sticky top-0 z-20 bg-background/80 backdrop-blur-sm">
-<div class="flex h-16 items-center justify-between px-4">
-<button class="grid h-10 w-10 place-items-center rounded-full">
-<span class="material-symbols-outlined text-2xl text-foreground/60">close</span>
-</button>
-<h1 class="text-lg font-semibold text-prim-purple-900">Translation Quiz</h1>
-<div class="flex items-center gap-2 rounded-full bg-prim-purple-100 px-3 py-1.5">
-<span class="material-symbols-outlined text-2xl text-prim-purple-700">timer</span>
-<span class="font-semibold text-prim-purple-900">2:48</span>
-</div>
-</div>
-<div class="px-4 pb-3">
-<div class="relative h-3 w-full rounded-full bg-prim-purple-100">
-<div class="absolute left-0 top-0 h-3 w-1/2 rounded-full bg-prim-purple-600"></div>
-</div>
-</div>
-</header>
-<main class="flex-grow flex flex-col px-4 pt-8 pb-4">
+<body class="bg-zinc-100 flex justify-center">
+<div class="relative flex h-auto  w-full max-w-[393px] flex-col bg-background font-display text-foreground bg-[#FFFFFF]">
+<header class=" border-b-8 border-[#975de8] p-4 bg-[#A666FF]  border-[#975de8] rounded-t-2xl">
+        <div class="flex items-center justify-between">
+          <img
+            class="flex items-center justify-center w-15 h-15" src="logo-full-color-no-word.svg"
+          >
+          <h1 class="text-lg font-bold text-white">The 12 Guards</h1>
+          <div
+            class="flex size-10 items-center justify-center rounded-lg border border-prim-gray-200"
+          >
+            <button class="flex items-center justify-center text-prim-gray-900">
+              <span class="material-symbols-outlined text-white text-3xl">menu</span>
+            </button>
+          </div>
+        </div>
+        <div class="mt-4 flex items-center gap-2">
+          <div class="h-2 flex-1 rounded-full bg-prim-gray-200">
+            <div
+              class="h-2 rounded-full bg-prim-purple-900"
+              style="width: 50%"
+            ></div>
+          </div>
+                      <span class="text-sm text-white">50%</span>
+
+
+        </div>
+      </header>
+<main class="flex-grow flex flex-col px-4 pt-8 pb-4 bg-[#FFFFFF]">
 <div class="text-center">
 <p class="text-lg font-medium text-muted-foreground">Translate this phrase</p>
 <h2 class="text-3xl font-bold text-prim-purple-950 mt-2">The Iron Gate</h2>
@@ -146,26 +173,6 @@
         </button>
 </div>
 </main>
-<footer class="sticky bottom-0 z-20 mt-auto border-t border-border bg-background/80 backdrop-blur-sm">
-<nav class="flex h-24 items-center justify-around px-4">
-<a class="flex flex-col items-center gap-1.5 text-muted-foreground transition-colors hover:text-prim-purple-700" href="#">
-<span class="material-symbols-outlined text-3xl">school</span>
-<span class="text-xs font-medium">Learn</span>
-</a>
-<a class="flex flex-col items-center gap-1.5 text-prim-purple-700" href="#">
-<span class="material-symbols-outlined text-3xl">swords</span>
-<span class="text-xs font-bold">Quests</span>
-</a>
-<a class="flex flex-col items-center gap-1.5 text-muted-foreground transition-colors hover:text-prim-purple-700" href="#">
-<span class="material-symbols-outlined text-3xl">shield</span>
-<span class="text-xs font-medium">Guards</span>
-</a>
-<a class="flex flex-col items-center gap-1.5 text-muted-foreground transition-colors hover:text-prim-purple-700" href="#">
-<span class="material-symbols-outlined text-3xl">person</span>
-<span class="text-xs font-medium">Profile</span>
-</a>
-</nav>
-</footer>
 </div>
 
 </body></html>

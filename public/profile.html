@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>User Profile</title>
+    <title>Posta Di Idiota - User Profile</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
@@ -38,8 +38,8 @@
               "text-light-secondary": "#525252",
               "border-light": "#e5e5e5",
             },
-            fontFamily: {
-              display: ["Inter", "sans-serif"],
+   fontFamily: {
+              display: ["Helvetica", "sans-serif"],
             },
             borderRadius: {
               DEFAULT: "0.75rem", // 12px
@@ -77,9 +77,6 @@
         class="flex-shrink-0 text-white p-4 shadow-md z-10  bg-[#A666FF] border-b-8 border-[#975de8] rounded-t-2xl"
       >
         <div class="flex justify-between items-center">
-          <button class="p-2">
-            <span class="material-symbols-outlined" onclick="history.back()">arrow_back</span>
-          </button>
           <h1 class="text-xl font-semibold">User Profile</h1>
           <button class="p-2">
             <span class="material-symbols-outlined">more_vert</span>
@@ -329,7 +326,7 @@
         </div>
         <div
           data-selected="true"
-          class="w-18 h-12 pt-8 left-[121px] top-[12px] absolute"
+          class="left-[121px] top-[12px] w-[60px] h-[40px]  pt-8  absolute hover:cursor-pointer"
           onclick="window.location.href='http://localhost:3000/home.html'"
         >
           <svg
@@ -338,7 +335,7 @@
             viewBox="0 0 22 23"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 left-[0.92px] top-[2px] absolute ml-[24px]"
+            class="w-5 h-5 top-[5px] absolute ml-[21px]"
           >
             <path
               d="M14.7644 11.3917L11.0963 7.56258L16.5068 1.91456H20.175V5.74373L14.7644 11.3917ZM3.25552 20.7732L2.10921 19.5766C1.9258 19.3851 1.8341 19.1618 1.8341 18.9065C1.8341 18.6512 1.9258 18.4278 2.10921 18.2364L4.76864 15.4363L2.75114 13.3303L3.39308 12.6602C3.74461 12.2932 4.18021 12.1097 4.69987 12.1097C5.21952 12.1097 5.65512 12.2932 6.00666 12.6602L6.09836 12.7798L7.19881 11.6311L10.867 15.4602L9.76654 16.609L9.88117 16.7047C10.2327 17.0717 10.4085 17.5264 10.4085 18.0689C10.4085 18.6113 10.2327 19.066 9.88117 19.433L9.23924 20.1031L7.22174 17.9971L4.53938 20.7732C4.35597 20.9647 4.142 21.0604 3.89745 21.0604C3.65291 21.0604 3.43893 20.9647 3.25552 20.7732ZM20.1521 19.7202L18.8682 21.0604L8.18464 9.95581C7.43572 10.4345 6.61802 10.6221 5.73154 10.5187C4.84506 10.4153 4.08086 10.0282 3.43893 9.3575L2.86577 8.7592L3.48478 8.08909C3.88217 7.65831 4.36759 7.44707 4.94105 7.45536C5.51451 7.46366 5.99962 7.6749 6.3964 8.08909L8.18464 9.95581C8.3222 9.87604 8.45211 9.78446 8.57438 9.68107C8.69666 9.57768 8.81893 9.46185 8.9412 9.33357C9.04819 9.22189 9.14754 9.10223 9.23924 8.97459C9.33095 8.84695 9.41501 8.71931 9.49143 8.59167L7.70319 6.72495C6.9237 5.92721 5.99901 5.52834 4.92913 5.52834C3.85924 5.52834 2.94984 5.93519 2.20092 6.74888L1.58191 7.39506L0.917053 6.70102L6.41933 0.981201L8.9412 3.61375C9.59842 4.29981 9.96921 5.10553 10.0536 6.03091C10.1379 6.9563 9.95056 7.80988 9.49143 8.59167L16.1171 15.5081C15.9948 15.0933 15.9184 14.6625 15.8878 14.2158C15.8573 13.769 15.8802 13.3223 15.9566 12.8756C16.0483 12.3969 16.2051 11.9502 16.427 11.5353C16.649 11.1205 16.9088 10.7335 17.2065 10.3741C17.5043 10.0148 17.8442 9.68777 18.2263 9.39292C18.6084 9.09808 19.0058 8.83897 19.4184 8.6156C20.0145 9.38144 20.473 10.2191 20.794 11.1285C21.115 12.0379 21.1838 12.9713 21.0003 13.9286C20.8322 14.7423 20.5076 15.4682 20.0264 16.1064C19.5453 16.7446 18.9605 17.295 18.2721 17.7577L20.1521 19.7202Z"
@@ -346,7 +343,7 @@
             />
           </svg>
           <div
-            class="left-[12px] top-[28.29px] absolute text-center justify-start text-[#FFFFFF] text-[10px] font-bold font-['Helvetica']"
+            class="left-[5px] top-[28.29px] absolute text-center justify-start text-[#FFFFFF] text-[10px] font-bold font-['Helvetica']"
           >
             Adventure
           </div>
