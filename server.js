@@ -4,6 +4,8 @@ import { fileURLToPath } from "url";
 import { configDotenv } from "dotenv";
 configDotenv();
 
+const PORT = process.env.PORT || 3000;
+
 const app = express();
 
 const __filename = fileURLToPath(import.meta.url);
@@ -18,4 +20,4 @@ app.get("/:page", (req, res) => {
   });
 });
 
-app.listen(3000, () => console.log(`Server running at ${process.env.IS_HOSTED}`));
+app.listen(PORT, () => console.log(`Server running at ${process.env.IS_HOSTED}`));
