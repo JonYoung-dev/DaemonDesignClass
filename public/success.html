@@ -137,13 +137,13 @@
     <script >
   let myparams = new URLSearchParams(window.location.search).get("url");
   const dest = `${myparams}`;
-  console.log("here is target url: " + "http://localhost:3000/" + dest);
+  console.log("here is target url: " + "https://daemondesignclass.onrender.com/" + dest);
 
       document.querySelectorAll("button").forEach((el) => {
         console.log("attaching", el);
         el.addEventListener("click", () => {
           console.log("clicked, navigating:", dest);
-          window.location.href = "http://localhost:3000/" + dest;
+          window.location.href = "https://daemondesignclass.onrender.com/" + dest;
         });
       });
   </script>
