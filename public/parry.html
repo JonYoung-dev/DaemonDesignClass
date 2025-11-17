@@ -60,6 +60,7 @@
       min-height: max(884px, 100dvh);
     }
   </style>
+ 
   </head>
 <body class="bg-background-light dark:bg-background-dark flex justify-center bg-zinc-100">
 <div class="w-full max-w-[393px] h-screen bg-background-light dark:bg-background-dark flex flex-col">
@@ -151,4 +152,18 @@
 
 </div>
 
+ <script >
+
+  const dest = "success?url=translation";
+  console.log("here is target url: " + "http://localhost:3000/" + dest);
+
+    document.querySelectorAll("button").forEach((el) => {
+      console.log("attaching", el);
+
+      el.addEventListener("click", () => {
+        console.log("clicked, navigating:", dest);
+        window.location.href = dest;
+      });
+    }); 
+  </script>
 </body></html>

@@ -174,5 +174,17 @@
 </div>
 </main>
 </div>
+<script>
+  const dest = "success?url=matching";
+  console.log("here is target url: " + "http://localhost:3000/" + dest);
 
+    document.querySelectorAll("button").forEach((el) => {
+      console.log("attaching", el);
+
+      el.addEventListener("click", () => {
+        console.log("clicked, navigating:", dest);
+        window.location.href = dest;
+      });
+    }); 
+</script>
 </body></html>

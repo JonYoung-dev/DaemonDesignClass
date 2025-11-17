@@ -61,21 +61,6 @@
         },
       };
     </script>
-    <script>
-       {let myparams = new URLSearchParams(window.location.search);
-console.log(myparams);
-let dest = myparams.get("url"); // e.g. ?url=/dashboard
-console.log(dest);
-
-if (dest) {
-  document.querySelectorAll("button.target").forEach((el) => {
-    el.addEventListener("click", () => {
-      window.location.href = dest;
-    });
-  });
-}
-}
-    </script>
     <style>
       .material-symbols-outlined {
         font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
@@ -150,5 +135,18 @@ if (dest) {
         </button>
       </footer>
     </div>
+   <script >
+  let myparams = new URLSearchParams(window.location.search).get("url");
+  const dest = `${myparams}`;
+  console.log("here is target url: " + "http://localhost:3000/" + dest);
+
+      document.querySelectorAll("button").forEach((el) => {
+        console.log("attaching", el);
+        el.addEventListener("click", () => {
+          console.log("clicked, navigating:", dest);
+          window.location.href = "http://localhost:3000/" + dest;
+        });
+      });
+  </script>
   </body>
 </html>
