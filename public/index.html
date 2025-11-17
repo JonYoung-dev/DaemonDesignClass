@@ -1,11 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>hello world</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=393, initial-scale=1.0" />
+    <link href="/output.css" rel="stylesheet" />
+    <title>Mobile Container Scroll</title>
+  </head>
+  <body class="flex justify-center items-start bg-stone-200 min-h-screen p-4">
+    <!-- Centered mobile container -->
+    <div
+      class="w-[393px] h-[852px] bg-stone-100 overflow-y-auto overflow-x-hidden relative rounded-xl shadow-lg"
+    >
+      <!-- this is the premade iphone topper-->
+      <div
+        data-background="True"
+        class="w-96 h-12 top-0 sticky pt-4 bg-Backgrounds-Primary inline-flex flex-col justify-start items-start"
+      >
+        <div class="self-stretch inline-flex justify-between items-center">
+          <div
+            class="flex-1 pl-4 pr-1.5 flex justify-center items-center gap-2.5"
+          >
+            <div
+              class="text-center justify-start text-Labels-Primary text-base font-['SF_Pro'] leading-5"
+            >
+              9:41
+            </div>
+          </div>
+          <div class="w-32 h-2.5"></div>
+          <div
+            class="flex-1 pl-1.5 pr-4 flex justify-center items-center gap-1.5"
+          >
+           <img src="Cellular Connection.svg"/>
+           <img src="Wifi.svg"/>
+           <img src="Battery.svg"/>
+          </div>
+        </div>
+      </div>
+      <!-- topper ends -->
+      <!-- Logo -->
+      <img
+        class="w-52 h-52 mx-auto mt-17"
+        src="logo-full-color.svg"
+        alt="Logo"
+      />
+
+      <!-- Username field -->
+      <div class="w-80 mx-auto mt-24">
+        <label
+          class="block mt-1 text-black text-lg font-bold font-['Helvetica']"
+          >Username</label
+        >
+        <div class="h-8 bg-zinc-300 rounded-2xl">
+            <input type="text" class="h-8 ml-4 focus:outline-none focus:border-none">
+        </div>
+      </div>
+
+      <!-- Password field -->
+      <div class="w-80 mx-auto mt-6">
+        <label
+          class="block mt-1 text-black text-lg font-bold font-['Helvetica']"
+          >Password</label
+        >
+        <div class="h-8 bg-zinc-300 rounded-2xl">
+            <input type="text" class="h-8 ml-4 focus:outline-none focus:border-none">
+        </div>
+      </div>
+
+      <!-- Login button -->
+      <div class="w-80 mx-auto mt-12">
+        <button class="w-full h-7 bg-zinc-300 rounded-2xl hover:cursor-pointer text-black font-['Helvetica'] text-base" onclick="window.location.href='http://localhost:3000/home.html'">
+          Login
+        </button>
+      </div>
+
+      <!-- Reset password button -->
+      <div class="w-80 mx-auto mt-4 mb-10">
+        <button
+          class="w-full h-7 bg-zinc-300 rounded-2xl text-black font-['Helvetica'] text-base"
+        >
+          Reset Password
+        </button>
+      </div>
+
+      <!-- Extra space to test scrolling -->
+      <div class="h-32"></div>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=393, initial-scale=1.0" />
+    <link href="/output.css" rel="stylesheet" />
+    <title>Mobile Container Scroll</title>
+  </head>
+  <body class="flex justify-center items-start bg-stone-200 min-h-screen p-4">
+    <!-- Centered mobile container -->
+    <div
+      class="w-[393px] h-[852px] bg-stone-100 overflow-y-auto overflow-x-hidden relative rounded-xl shadow-lg"
+    >
+      <!-- this is the premade iphone topper-->
+      <div
+        data-background="True"
+        class="w-96 h-12 top-0 sticky pt-4 bg-Backgrounds-Primary inline-flex flex-col justify-start items-start"
+      >
+        <div class="self-stretch inline-flex justify-between items-center">
+          <div
+            class="flex-1 pl-4 pr-1.5 flex justify-center items-center gap-2.5"
+          >
+            <div
+              class="text-center justify-start text-Labels-Primary text-base font-['SF_Pro'] leading-5"
+            >
+              9:41
+            </div>
+          </div>
+          <div class="w-32 h-2.5"></div>
+          <div
+            class="flex-1 pl-1.5 pr-4 flex justify-center items-center gap-1.5"
+          >
+            <img src="Cellular Connection.svg" />
+            <img src="Wifi.svg" />
+            <img src="Battery.svg" />
+          </div>
+        </div>
+      </div>
+      <!-- topper ends -->
+      <!-- home header -->
+      <div class="w-96 h-20 relative">
+        <div
+          class="w-[393px] h-20 left-0 top-0 absolute bg-[#A666FF] border-b-8 border-[#975de8]"
+        ></div>
+        <div
+          class="w-52 h-7 left-[93px] top-[26px] absolute text-center justify-center text-white text-xl font-bold font-['Helvetica']"
+        >
+          The 12 Guards
+        </div>
+        <div
+          class="w-8 h-8 left-[341px] top-[24px] absolute bg-[#975de8] rounded-lg"
+        >
+          <img class="w-8 h-8" src="material-symbols_menu-rounded.svg" />
+        </div>
+        <img
+          class="w-15 h-15 left-[20px] top-[15px] absolute"
+          src="logo-full-color-no-word.svg"
+        />
+      </div>
+      <!--home header done-->
+      <!-- complete mission -->
+
+      <!-- complete done -->
+      <!-- available mission -->
+
+      <!-- available done -->
+      <!-- navbar -->
+      <div class="w-[393px] h-16 bottom-0 absolute">
+        <div class="w-[393px] h-16 left-0 top-0 absolute bg-gray-200"></div>
+        <div
+          data-selected="false"
+          class="w-14 h-10 left-[28px] top-[12px] absolute"
+        >
+          <div class="w-6 h-6 left-[17px] top-[1px] absolute">
+            <div
+              class="w-4 h-5 left-[4px] top-[2px] absolute bg-zinc-500"
+            ></div>
+          </div>
+          <div
+            class="left-[15px] top-[28.29px] absolute text-center justify-start text-zinc-500 text-[10px] font-normal font-['Helvetica']"
+          >
+            Profile
+          </div>
+        </div>
+        <div
+          data-selected="false"
+          class="w-14 h-10 left-[215px] top-[12px] absolute"
+        >
+          <div
+            class="left-[13px] top-[28.29px] absolute text-center justify-start text-zinc-500 text-[10px] font-normal font-['Helvetica']"
+          >
+            Quests
+          </div>
+          <div class="w-6 h-6 left-[17px] top-[1px] absolute">
+            <div
+              class="w-3.5 h-4 left-[5px] top-[3px] absolute bg-zinc-500"
+            ></div>
+          </div>
+        </div>
+        <div
+          data-selected="true"
+          class="w-14 h-10 left-[121px] top-[12px] absolute"
+        >
+          <div
+            class="w-10 h-7 left-[9px] top-[-1px] absolute bg-gray-200 rounded-[45px]"
+          ></div>
+          <div class="w-6 h-6 left-[17px] top-[1px] absolute">
+            <div
+              class="w-5 h-5 left-[0.92px] top-[0.98px] absolute bg-black"
+            ></div>
+          </div>
+          <div
+            class="left-[4px] top-[28.29px] absolute text-center justify-start text-neutral-800 text-[10px] font-bold font-['Helvetica']"
+          >
+            Adventure
+          </div>
+        </div>
+        <div
+          data-selected="false"
+          class="w-14 h-10 left-[307px] top-[12px] absolute"
+        >
+          <div
+            class="left-[7px] top-[28.29px] absolute text-center justify-start text-zinc-500 text-[10px] font-normal font-['Helvetica']"
+          >
+            Dictionary
+          </div>
+          <div class="w-6 h-6 left-[17px] top-[1px] absolute">
+            <div
+              class="w-5 h-4 left-[1px] top-[3.91px] absolute bg-zinc-500"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <!-- navbar done -->
+      <!-- Extra space to test scrolling -->
+      <div class="h-32"></div>
+    </div>
+  </body>
+</html>
