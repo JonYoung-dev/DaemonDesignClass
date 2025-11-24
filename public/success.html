@@ -4,7 +4,7 @@
   
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Correct! - Martial Arts Progress</title>
+    <title>Correct! | Posta Di Idiota</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&amp;display=swap"
@@ -137,13 +137,13 @@
     <script >
   let myparams = new URLSearchParams(window.location.search).get("url");
   const dest = `${myparams}`;
-  console.log("here is target url: " + `${process.env.IS_HOSTED}` + dest);
+  console.log("here is target url: " + "https://daemondesignclass.onrender.com/" + dest);
 
       document.querySelectorAll("button").forEach((el) => {
         console.log("attaching", el);
         el.addEventListener("click", () => {
           console.log("clicked, navigating:", dest);
-          window.location.href = `${process.env.IS_HOSTED}` + dest;
+          window.location.href = "https://daemondesignclass.onrender.com/" + dest;
         });
       });
   </script>
