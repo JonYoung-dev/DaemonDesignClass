@@ -168,7 +168,7 @@
     </div>
     <script>
   const dest = "success?url=parry";
-  console.log("here is target url: " + "https://daemondesignclass.onrender.com/" + dest);
+  console.log("here is target url: " + `${process.env.IS_HOSTED}` + dest);
 
     document.querySelectorAll("button").forEach((el) => {
       console.log("attaching", el);
