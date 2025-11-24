@@ -1,423 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head> <link rel="icon" href="logo-full-color-no-word.svg" type="image/x-icon">
-  
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Quests | Posta Di Idiota</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-      rel="stylesheet"
-    />
-    <style>
-      .material-symbols-outlined {
-        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-      }
-    </style>
-    <script>
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "prim-purple-50": "#f6f0ff",
-              "prim-purple-100": "#e3d0ff",
-              "prim-purple-200": "#d6b9ff",
-              "prim-purple-600": "#975de8",
-              "prim-purple-700": "#7648b5",
-              primary: "#975de8",
-              "background-light": "#f6f0ff",
-              "card-light": "#FFFFFF",
-              "text-primary-light": "#1C1C1E",
-              "text-secondary-light": "#7648b5",
-              "border-light": "#e3d0ff",
-            },
-   fontFamily: {
-              display: ["Helvetica", "sans-serif"],
-            },
-            borderRadius: {
-              DEFAULT: "1rem",
-            },
+
+<head>
+  <link rel="icon" href="logo-full-color-no-word.svg" type="image/x-icon">
+
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Quests | Posta Di Idiota</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "prim-purple-50": "#f6f0ff",
+            "prim-purple-100": "#e3d0ff",
+            "prim-purple-200": "#d6b9ff",
+            "prim-purple-600": "#975de8",
+            "prim-purple-700": "#7648b5",
+            primary: "#975de8",
+            "background-light": "#f6f0ff",
+            "card-light": "#FFFFFF",
+            "text-primary-light": "#1C1C1E",
+            "text-secondary-light": "#7648b5",
+            "border-light": "#e3d0ff",
+          },
+          fontFamily: {
+            display: ["Helvetica", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "1rem",
           },
         },
-      };
-    </script>
-    <style>
-      body {
-        min-height: max(884px, 100dvh);
-      }
-    </style>
-    <style>
-      body {
-        min-height: max(884px, 100dvh);
-      }
-    </style>
-  </head>
-  <body class="bg-[#ededed] font-display overflow-hidden">
-    <div class="w-[393px] mx-auto h-screen flex flex-col relative bg-[#FFFFFF]">
-      <header // #FFFFFF
-        class="flex flex-col gap-4 p-4 sticky top-0  z-10  bg-[#A666FF] border-b-8 border-[#975de8] rounded-t-2xl"
-      >
-        <div class="flex items-center justify-between">
-          <h1 class="text-xl font-bold text-prim-purple-50">Quests</h1>
-          <button
-            class="w-8 h-8 rounded-full bg-prim-purple-600 flex items-center justify-center text-prim-purple-50"
-          >
-            <span class="material-symbols-outlined text-base"
-              >emoji_events</span
-            >
-          </button>
-        </div>
-        <div class="relative">
-          <span
-            class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-prim-purple-200 text-lg"
-            >search</span
-          >
-          <input
-            class="w-full bg-prim-purple-600 border-none rounded-lg pl-10 pr-4 py-2.5 text-sm text-prim-purple-50 placeholder:text-prim-purple-200 focus:ring-2 focus:ring-prim-purple-100"
-            placeholder="Search for a quest"
-            type="text"
-          />
-        </div>
-      </header>
-      <main class="flex-grow overflow-y-auto px-4 pt-6 pb-24">
-        <section class="mb-8">
-          <h2 class="text-lg font-semibold text-prim-purple-700 mb-4">
-            Daily Quests
-          </h2>
-          <div class="space-y-3">
-            <div
-              class="bg-[#f6f0ff] p-4 rounded-lg flex items-center gap-4 shadow-sm"
-            >
-              <span
-                class="material-symbols-outlined text-primary text-3xl"
-                style="font-variation-settings: 'FILL' 1"
-                >swords</span
-              >
-              <div class="flex-grow">
-                <p class="text-sm font-medium text-text-primary-light">
-                  Complete 2 levels
-                </p>
-                <div class="w-full bg-prim-purple-100 rounded-full h-1.5 mt-1">
-                  <div
-                    class="bg-primary h-1.5 rounded-full"
-                    style="width: 50%"
-                  ></div>
-                </div>
-                 <span class="text-sm font-semibold text-primary w-10 text-right"
-                >50%</span
-              >
+      },
+    };
+  </script>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body class="bg-[#ededed] font-display overflow-hidden">
+  <div class="w-[393px] mx-auto h-screen flex flex-col relative bg-[#FFFFFF]">
+    <header // #FFFFFF
+      class="flex flex-col gap-4 p-4 sticky top-0  z-10  bg-[#A666FF] border-b-8 border-[#975de8] rounded-t-2xl">
+      <div class="flex items-center justify-between">
+        <h1 class="text-xl font-bold text-prim-purple-50">Quests</h1>
+        <button class="w-8 h-8 rounded-full bg-prim-purple-600 flex items-center justify-center text-prim-purple-50">
+          <span class="material-symbols-outlined text-base">emoji_events</span>
+        </button>
+      </div>
+      <div class="relative">
+        <span
+          class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-prim-purple-200 text-lg">search</span>
+        <input
+          class="w-full bg-prim-purple-600 border-none rounded-lg pl-10 pr-4 py-2.5 text-sm text-prim-purple-50 placeholder:text-prim-purple-200 focus:ring-2 focus:ring-prim-purple-100"
+          placeholder="Search for a quest" type="text" />
+      </div>
+    </header>
+    <main class="flex-grow overflow-y-auto px-4 pt-6 pb-24">
+      <section class="mb-8">
+        <h2 class="text-lg font-semibold text-prim-purple-700 mb-4">
+          Daily Quests
+        </h2>
+        
+        <div class="space-y-3">
+          <div class="bg-[#f6f0ff] p-4 rounded-lg flex items-center gap-4 shadow-sm">
+            <span class="material-symbols-outlined text-[#d6a700] text-3xl"
+              style="font-variation-settings: 'FILL' 1">fitness_center</span>
+            <div class="flex-grow">
+              <p class="text-sm font-medium text-text-primary-light">
+                Practice 1 new move
+              </p>
+              <div class="w-full bg-prim-purple-100 rounded-full h-1.5 mt-1">
+                <div class="bg-[#d6a700] h-1.5 rounded-full" style="width: 100%"></div>
               </div>
-            </div>
-            <div
-              class="bg-[#f6f0ff] p-4 rounded-lg flex items-center gap-4 shadow-sm"
-            >
-              <span
-                class="material-symbols-outlined text-[#d6a700] text-3xl"
-                style="font-variation-settings: 'FILL' 1"
-                >fitness_center</span
-              >
-              <div class="flex-grow">
-                <p class="text-sm font-medium text-text-primary-light">
-                  Practice 1 new move
-                </p>
-                <div class="w-full bg-prim-purple-100 rounded-full h-1.5 mt-1">
-                  <div
-                    class="bg-[#d6a700] h-1.5 rounded-full"
-                    style="width: 100%"
-                  ></div>
-                </div>
-                  <span class="text-sm font-semibold text-[#d6a700] w-10 text-right"
-                >100%</span
-              >
-              </div>
-          
-            </div>
-            <div
-              class="bg-[#f6f0ff] p-4 rounded-lg flex items-center gap-4 shadow-sm"
-            >
-              <span
-                class="material-symbols-outlined text-primary text-3xl"
-                style="font-variation-settings: 'FILL' 1"
-                >local_fire_department</span
-              >
-              <div class="flex-grow">
-                <p class="text-sm font-medium text-text-primary-light">
-                  Maintain your streak
-                </p>
-                <div class="w-full bg-prim-purple-100 rounded-full h-1.5 mt-1">
-                  <div
-                    class="bg-primary h-1.5 rounded-full"
-                    style="width: 75%"
-                  ></div>
-                </div>
-                   <span class="text-sm font-semibold text-primary w-10 text-right"
-                >75%</span
-              >
-              </div>
-           
+              <span class="text-sm font-semibold text-[#d6a700] w-10 text-right">100%</span>
             </div>
           </div>
-        </section>
-        <section>
-          <h2 class="text-lg font-semibold text-prim-purple-700 mb-4">
-            Weekly Quests
-          </h2>
-          <div class="space-y-3">
-            <div
-              class="bg-[#f6f0ff] p-4 rounded-lg flex items-center gap-4 shadow-sm"
-            >
-              <span
-                class="material-symbols-outlined text-primary text-3xl"
-                style="font-variation-settings: 'FILL' 1"
-                >swords</span
-              >
-              <div class="flex-grow">
-                <p class="text-sm font-medium text-text-primary-light">
-                  Complete 10 levels
-                </p>
-                <div class="w-full bg-prim-purple-100 rounded-full h-1.5 mt-1">
-                  <div
-                    class="bg-primary h-1.5 rounded-full"
-                    style="width: 20%"
-                  ></div>
-                </div>
-                <span class="text-sm font-semibold text-primary w-10 text-right"
-                >20%</span
-              >
+          <div class="bg-[#f6f0ff] p-4 rounded-lg flex items-center gap-4 shadow-sm">
+            <span class="material-symbols-outlined text-primary text-3xl"
+              style="font-variation-settings: 'FILL' 1">swords</span>
+            <div class="flex-grow">
+              <p class="text-sm font-medium text-text-primary-light">
+                Complete 2 levels
+              </p>
+              <div class="w-full bg-prim-purple-100 rounded-full h-1.5 mt-1">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 50%"></div>
               </div>
-              
-            </div>
-            <div
-              class="bg-[#f6f0ff] p-4 rounded-lg flex items-center gap-4 shadow-sm"
-            >
-              <span
-                class="material-symbols-outlined text-primary text-3xl"
-                style="font-variation-settings: 'FILL' 1"
-                >school</span
-              >
-              <div class="flex-grow">
-                <p class="text-sm font-medium text-text-primary-light">
-                  Learn a new module
-                </p>
-                <div class="w-full bg-prim-purple-100 rounded-full h-1.5 mt-1">
-                  <div
-                    class="bg-primary h-1.5 rounded-full"
-                    style="width: 0%"
-                  ></div>
-                </div>
-                <span class="text-sm font-semibold text-primary w-10 text-right"
-                >0%</span
-              >
-              </div>
-              
-            </div>
-            <div
-              class="bg-[#f6f0ff] p-4 rounded-lg flex items-center gap-4 shadow-sm"
-            >
-              <span
-                class="material-symbols-outlined text-primary text-3xl"
-                style="font-variation-settings: 'FILL' 1"
-                >emoji_events</span
-              >
-              <div class="flex-grow">
-                <p class="text-sm font-medium text-text-primary-light">
-                  Earn 5 achievements
-                </p>
-                <div class="w-full bg-prim-purple-100 rounded-full h-1.5 mt-1">
-                  <div
-                    class="bg-primary h-1.5 rounded-full"
-                    style="width: 60%"
-                  ></div>
-                </div>
-                <span class="text-sm font-semibold text-primary w-10 text-right"
-                >60%</span
-              >
-              </div>
-              
-            </div>
-            <div
-              class="bg-[#f6f0ff] p-4 rounded-lg flex items-center gap-4 shadow-sm"
-            >
-              <span
-                class="material-symbols-outlined text-primary text-3xl"
-                style="font-variation-settings: 'FILL' 1"
-                >group</span
-              >
-              <div class="flex-grow">
-                <p class="text-sm font-medium text-text-primary-light">
-                  Challenge a friend
-                </p>
-                <div class="w-full bg-prim-purple-100 rounded-full h-1.5 mt-1">
-                  <div
-                    class="bg-primary h-1.5 rounded-full"
-                    style="width: 100%"
-                  ></div>
-                </div>
-                <span class="text-sm font-semibold text-primary w-10 text-right"
-                >100%</span
-              >
-              </div>
-              
-            </div>
-            <div
-              class="bg-[#f6f0ff] p-4 rounded-lg flex items-center gap-4 shadow-sm"
-            >
-              <span
-                class="material-symbols-outlined text-primary text-3xl"
-                style="font-variation-settings: 'FILL' 1"
-                >book</span
-              >
-              <div class="flex-grow">
-                <p class="text-sm font-medium text-text-primary-light">
-                  Read 3 articles
-                </p>
-                <div class="w-full bg-prim-purple-100 rounded-full h-1.5 mt-1">
-                  <div
-                    class="bg-primary h-1.5 rounded-full"
-                    style="width: 33%"
-                  ></div>
-                </div>
-                <span class="text-sm font-semibold text-primary w-10 text-right"
-                >33%</span
-              >
-              </div>
-              
-            </div>
-            <div
-              class="bg-[#f6f0ff] p-4 rounded-lg flex items-center gap-4 shadow-sm"
-            >
-              <span
-                class="material-symbols-outlined text-primary text-3xl"
-                style="font-variation-settings: 'FILL' 1"
-                >videocam</span
-              >
-              <div class="flex-grow">
-                <p class="text-sm font-medium text-text-primary-light">
-                  Watch 5 video tutorials
-                </p>
-                <div class="w-full bg-prim-purple-100 rounded-full h-1.5 mt-1">
-                  <div
-                    class="bg-primary h-1.5 rounded-full"
-                    style="width: 80%"
-                  ></div>
-                </div>
-                <span class="text-sm font-semibold text-primary w-10 text-right"
-                >80%</span
-              >
-              </div>
-              
+              <span class="text-sm font-semibold text-primary w-10 text-right">50%</span>
             </div>
           </div>
-        </section>
-      </main>
-       <div class="w-[393px] h-16 bottom-0 fixed rounded-b-2xl border-b-8">
+          <div class="bg-[#f6f0ff] p-4 rounded-lg flex items-center gap-4 shadow-sm">
+            <span class="material-symbols-outlined text-primary text-3xl"
+              style="font-variation-settings: 'FILL' 1">local_fire_department</span>
+            <div class="flex-grow">
+              <p class="text-sm font-medium text-text-primary-light">
+                Maintain your streak
+              </p>
+              <div class="w-full bg-prim-purple-100 rounded-full h-1.5 mt-1">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 75%"></div>
+              </div>
+              <span class="text-sm font-semibold text-primary w-10 text-right">75%</span>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class="text-lg font-semibold text-prim-purple-700 mb-4">
+          Weekly Quests
+        </h2>
+        <div class="space-y-3">
+          <div class="bg-[#f6f0ff] p-4 rounded-lg flex items-center gap-4 shadow-sm">
+            <span class="material-symbols-outlined text-primary text-3xl"
+              style="font-variation-settings: 'FILL' 1">swords</span>
+            <div class="flex-grow">
+              <p class="text-sm font-medium text-text-primary-light">
+                Complete 10 levels
+              </p>
+              <div class="w-full bg-prim-purple-100 rounded-full h-1.5 mt-1">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 20%"></div>
+              </div>
+              <span class="text-sm font-semibold text-primary w-10 text-right">20%</span>
+            </div>
+
+          </div>
+          <div class="bg-[#f6f0ff] p-4 rounded-lg flex items-center gap-4 shadow-sm">
+            <span class="material-symbols-outlined text-primary text-3xl"
+              style="font-variation-settings: 'FILL' 1">school</span>
+            <div class="flex-grow">
+              <p class="text-sm font-medium text-text-primary-light">
+                Learn a new module
+              </p>
+              <div class="w-full bg-prim-purple-100 rounded-full h-1.5 mt-1">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 0%"></div>
+              </div>
+              <span class="text-sm font-semibold text-primary w-10 text-right">0%</span>
+            </div>
+
+          </div>
+          <div class="bg-[#f6f0ff] p-4 rounded-lg flex items-center gap-4 shadow-sm">
+            <span class="material-symbols-outlined text-primary text-3xl"
+              style="font-variation-settings: 'FILL' 1">emoji_events</span>
+            <div class="flex-grow">
+              <p class="text-sm font-medium text-text-primary-light">
+                Earn 5 achievements
+              </p>
+              <div class="w-full bg-prim-purple-100 rounded-full h-1.5 mt-1">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 60%"></div>
+              </div>
+              <span class="text-sm font-semibold text-primary w-10 text-right">60%</span>
+            </div>
+
+          </div>
+          <div class="bg-[#f6f0ff] p-4 rounded-lg flex items-center gap-4 shadow-sm">
+            <span class="material-symbols-outlined text-primary text-3xl"
+              style="font-variation-settings: 'FILL' 1">group</span>
+            <div class="flex-grow">
+              <p class="text-sm font-medium text-text-primary-light">
+                Challenge a friend
+              </p>
+              <div class="w-full bg-prim-purple-100 rounded-full h-1.5 mt-1">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 100%"></div>
+              </div>
+              <span class="text-sm font-semibold text-primary w-10 text-right">100%</span>
+            </div>
+
+          </div>
+          <div class="bg-[#f6f0ff] p-4 rounded-lg flex items-center gap-4 shadow-sm">
+            <span class="material-symbols-outlined text-primary text-3xl"
+              style="font-variation-settings: 'FILL' 1">book</span>
+            <div class="flex-grow">
+              <p class="text-sm font-medium text-text-primary-light">
+                Read 3 articles
+              </p>
+              <div class="w-full bg-prim-purple-100 rounded-full h-1.5 mt-1">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 33%"></div>
+              </div>
+              <span class="text-sm font-semibold text-primary w-10 text-right">33%</span>
+            </div>
+
+          </div>
+          <div class="bg-[#f6f0ff] p-4 rounded-lg flex items-center gap-4 shadow-sm">
+            <span class="material-symbols-outlined text-primary text-3xl"
+              style="font-variation-settings: 'FILL' 1">videocam</span>
+            <div class="flex-grow">
+              <p class="text-sm font-medium text-text-primary-light">
+                Watch 5 video tutorials
+              </p>
+              <div class="w-full bg-prim-purple-100 rounded-full h-1.5 mt-1">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 80%"></div>
+              </div>
+              <span class="text-sm font-semibold text-primary w-10 text-right">80%</span>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="w-[393px] h-16 bottom-0 fixed rounded-b-2xl border-b-8">
+      <div class="w-[393px] h-16 left-0 top-0 absolute bg-[#A666FF] rounded-b-2xl border-b-8 border-[#A666FF]"></div>
+      <div data-selected="false" class="w-14 h-10 left-[28px] top-[12px] absolute hover:cursor-pointer"
+        onclick="window.location.href='https://daemondesignclass.onrender.com/profile.html'">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+          class="w-[24px] h-[24px] left-[4px] top-[2px] absolute ml-[13px]">
+          <path
+            d="M12 18C11.0667 18 10.175 18.146 9.325 18.438C8.475 18.73 7.7 19.1673 7 19.75V20H17V19.75C16.3 19.1667 15.525 18.7293 14.675 18.438C13.825 18.1467 12.9333 18.0007 12 18ZM12 16C13.15 16 14.225 16.175 15.225 16.525C16.225 16.875 17.15 17.3667 18 18V4H6V18C6.85 17.3667 7.775 16.875 8.775 16.525C9.775 16.175 10.85 16 12 16ZM12 12C11.5833 12 11.2293 11.854 10.938 11.562C10.6467 11.27 10.5007 10.916 10.5 10.5C10.4993 10.084 10.6453 9.73 10.938 9.438C11.2307 9.146 11.5847 9 12 9C12.4153 9 12.7697 9.146 13.063 9.438C13.3563 9.73 13.502 10.084 13.5 10.5C13.498 10.916 13.3523 11.2703 13.063 11.563C12.7737 11.8557 12.4193 12.0013 12 12ZM6 22C5.45 22 4.97933 21.8043 4.588 21.413C4.19667 21.0217 4.00067 20.5507 4 20V4C4 3.45 4.196 2.97933 4.588 2.588C4.98 2.19667 5.45067 2.00067 6 2H18C18.55 2 19.021 2.196 19.413 2.588C19.805 2.98 20.0007 3.45067 20 4V20C20 20.55 19.8043 21.021 19.413 21.413C19.0217 21.805 18.5507 22.0007 18 22H6ZM12 14C12.9667 14 13.7917 13.6583 14.475 12.975C15.1583 12.2917 15.5 11.4667 15.5 10.5C15.5 9.53333 15.1583 8.70833 14.475 8.025C13.7917 7.34167 12.9667 7 12 7C11.0333 7 10.2083 7.34167 9.525 8.025C8.84167 8.70833 8.5 9.53333 8.5 10.5C8.5 11.4667 8.84167 12.2917 9.525 12.975C10.2083 13.6583 11.0333 14 12 14Z"
+            fill="#FFFFFF" />
+        </svg>
         <div
-          class="w-[393px] h-16 left-0 top-0 absolute bg-[#A666FF] rounded-b-2xl border-b-8 border-[#A666FF]"
-        ></div>
+          class="left-[15px] top-[28.29px] absolute text-center justify-start text-[#ffffff] text-[10px] font-normal font-['Helvetica']">
+          Profile
+        </div>
+      </div>
+      <div data-selected="false"
+        class="w-14 h-10 left-[215px] top-[12px] absolute hover:cursor-pointer bg-[#975de8] rounded-full hover:cursor-pointer"
+        onclick="window.location.href='https://daemondesignclass.onrender.com/quests.html'">
         <div
-          data-selected="false"
-          class="w-14 h-10 left-[28px] top-[12px] absolute hover:cursor-pointer" onclick="window.location.href='https://daemondesignclass.onrender.com/profile.html'"
-        >
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-[24px] h-[24px] left-[4px] top-[2px] absolute ml-[13px]"
-          >
+          class="left-[13px] top-[28.29px] absolute text-center justify-start text-[#ffffff] text-[10px] font-normal font-['Helvetica']">
+          Quests
+        </div>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+          class="w-[24px] h-[24px] left-[5px] top-[3px] absolute ml-[12px]">
+          <path
+            d="M9.725 14L12 12.625L14.275 14L13.675 11.4L15.675 9.675L13.05 9.45L12 7L10.95 9.45L8.325 9.675L10.325 11.4L9.725 14ZM5 21V3H19V21L12 18L5 21ZM7 17.95L12 15.8L17 17.95V5H7V17.95Z"
+            fill="#FFFFFF" />
+        </svg>
+      </div>
+      <div data-selected="true" class="left-[121px] top-[12px] w-[60px] h-[40px]  pt-8  absolute hover:cursor-pointer"
+        onclick="window.location.href='https://daemondesignclass.onrender.com/home.html'">
+        <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg"
+          class="w-5 h-5 top-[5px] absolute ml-[21px]">
+          <path
+            d="M14.7644 11.3917L11.0963 7.56258L16.5068 1.91456H20.175V5.74373L14.7644 11.3917ZM3.25552 20.7732L2.10921 19.5766C1.9258 19.3851 1.8341 19.1618 1.8341 18.9065C1.8341 18.6512 1.9258 18.4278 2.10921 18.2364L4.76864 15.4363L2.75114 13.3303L3.39308 12.6602C3.74461 12.2932 4.18021 12.1097 4.69987 12.1097C5.21952 12.1097 5.65512 12.2932 6.00666 12.6602L6.09836 12.7798L7.19881 11.6311L10.867 15.4602L9.76654 16.609L9.88117 16.7047C10.2327 17.0717 10.4085 17.5264 10.4085 18.0689C10.4085 18.6113 10.2327 19.066 9.88117 19.433L9.23924 20.1031L7.22174 17.9971L4.53938 20.7732C4.35597 20.9647 4.142 21.0604 3.89745 21.0604C3.65291 21.0604 3.43893 20.9647 3.25552 20.7732ZM20.1521 19.7202L18.8682 21.0604L8.18464 9.95581C7.43572 10.4345 6.61802 10.6221 5.73154 10.5187C4.84506 10.4153 4.08086 10.0282 3.43893 9.3575L2.86577 8.7592L3.48478 8.08909C3.88217 7.65831 4.36759 7.44707 4.94105 7.45536C5.51451 7.46366 5.99962 7.6749 6.3964 8.08909L8.18464 9.95581C8.3222 9.87604 8.45211 9.78446 8.57438 9.68107C8.69666 9.57768 8.81893 9.46185 8.9412 9.33357C9.04819 9.22189 9.14754 9.10223 9.23924 8.97459C9.33095 8.84695 9.41501 8.71931 9.49143 8.59167L7.70319 6.72495C6.9237 5.92721 5.99901 5.52834 4.92913 5.52834C3.85924 5.52834 2.94984 5.93519 2.20092 6.74888L1.58191 7.39506L0.917053 6.70102L6.41933 0.981201L8.9412 3.61375C9.59842 4.29981 9.96921 5.10553 10.0536 6.03091C10.1379 6.9563 9.95056 7.80988 9.49143 8.59167L16.1171 15.5081C15.9948 15.0933 15.9184 14.6625 15.8878 14.2158C15.8573 13.769 15.8802 13.3223 15.9566 12.8756C16.0483 12.3969 16.2051 11.9502 16.427 11.5353C16.649 11.1205 16.9088 10.7335 17.2065 10.3741C17.5043 10.0148 17.8442 9.68777 18.2263 9.39292C18.6084 9.09808 19.0058 8.83897 19.4184 8.6156C20.0145 9.38144 20.473 10.2191 20.794 11.1285C21.115 12.0379 21.1838 12.9713 21.0003 13.9286C20.8322 14.7423 20.5076 15.4682 20.0264 16.1064C19.5453 16.7446 18.9605 17.295 18.2721 17.7577L20.1521 19.7202Z"
+            fill="#FFFFFF" />
+        </svg>
+        <div
+          class="left-[5px] top-[28.29px] absolute text-center justify-start text-[#FFFFFF] text-[10px] font-bold font-['Helvetica']">
+          Adventure
+        </div>
+      </div>
+      <div data-selected="false" class="w-[24px] h-[24px] left-[307px] top-[12px] absolute hover:cursor-pointer"
+        onclick="window.location.href='https://daemondesignclass.onrender.com/dictionary.html'">
+        <div
+          class="left-[7px] top-[28.29px] absolute text-center justify-start text-[#ffffff] text-[10px] font-normal font-['Helvetica']">
+          Dictionary
+        </div>
+        <div class="w-6 h-6 left-[17px] top-[1px] absolute">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="w-[24px] h-[24px] left-[1px] top-[3.91px] absolute">
             <path
-              d="M12 18C11.0667 18 10.175 18.146 9.325 18.438C8.475 18.73 7.7 19.1673 7 19.75V20H17V19.75C16.3 19.1667 15.525 18.7293 14.675 18.438C13.825 18.1467 12.9333 18.0007 12 18ZM12 16C13.15 16 14.225 16.175 15.225 16.525C16.225 16.875 17.15 17.3667 18 18V4H6V18C6.85 17.3667 7.775 16.875 8.775 16.525C9.775 16.175 10.85 16 12 16ZM12 12C11.5833 12 11.2293 11.854 10.938 11.562C10.6467 11.27 10.5007 10.916 10.5 10.5C10.4993 10.084 10.6453 9.73 10.938 9.438C11.2307 9.146 11.5847 9 12 9C12.4153 9 12.7697 9.146 13.063 9.438C13.3563 9.73 13.502 10.084 13.5 10.5C13.498 10.916 13.3523 11.2703 13.063 11.563C12.7737 11.8557 12.4193 12.0013 12 12ZM6 22C5.45 22 4.97933 21.8043 4.588 21.413C4.19667 21.0217 4.00067 20.5507 4 20V4C4 3.45 4.196 2.97933 4.588 2.588C4.98 2.19667 5.45067 2.00067 6 2H18C18.55 2 19.021 2.196 19.413 2.588C19.805 2.98 20.0007 3.45067 20 4V20C20 20.55 19.8043 21.021 19.413 21.413C19.0217 21.805 18.5507 22.0007 18 22H6ZM12 14C12.9667 14 13.7917 13.6583 14.475 12.975C15.1583 12.2917 15.5 11.4667 15.5 10.5C15.5 9.53333 15.1583 8.70833 14.475 8.025C13.7917 7.34167 12.9667 7 12 7C11.0333 7 10.2083 7.34167 9.525 8.025C8.84167 8.70833 8.5 9.53333 8.5 10.5C8.5 11.4667 8.84167 12.2917 9.525 12.975C10.2083 13.6583 11.0333 14 12 14Z"
-              fill="#FFFFFF"
-            />
+              d="M6.5 15.65C7.28334 15.65 8.046 15.7357 8.788 15.9072C9.53 16.0787 10.2673 16.3353 11 16.677V7.04248C10.3167 6.65123 9.59167 6.35779 8.825 6.16216C8.05834 5.96654 7.28334 5.86873 6.5 5.86873C5.9 5.86873 5.304 5.92578 4.712 6.0399C4.12 6.15401 3.54933 6.32518 3 6.55341V16.2369C3.58333 16.0412 4.16267 15.8945 4.738 15.7967C5.31333 15.6989 5.90067 15.65 6.5 15.65ZM13 16.677C13.7333 16.3347 14.471 16.0781 15.213 15.9072C15.955 15.7364 16.7173 15.6506 17.5 15.65C18.1 15.65 18.6877 15.6989 19.263 15.7967C19.8383 15.8945 20.4173 16.0412 21 16.2369V6.55341C20.45 6.32518 19.879 6.15401 19.287 6.0399C18.695 5.92578 18.0993 5.86873 17.5 5.86873C16.7167 5.86873 15.9417 5.96654 15.175 6.16216C14.4083 6.35779 13.6833 6.65123 13 7.04248V16.677ZM12 19.049C11.7667 19.049 11.5457 19.0206 11.337 18.9639C11.1283 18.9071 10.9327 18.8295 10.75 18.7311C10.1 18.3561 9.41667 18.0751 8.7 17.8879C7.98334 17.7008 7.25 17.6069 6.5 17.6062C5.8 17.6062 5.11267 17.6959 4.438 17.8752C3.76333 18.0545 3.11733 18.3072 2.5 18.6333C2.15 18.8126 1.81267 18.8044 1.488 18.6088C1.16333 18.4132 1.00067 18.1279 1 17.753V5.96654C1 5.78722 1.046 5.61604 1.138 5.45302C1.23 5.29 1.36733 5.16774 1.55 5.08623C2.31667 4.69498 3.11667 4.40154 3.95 4.20591C4.78333 4.01029 5.63334 3.91248 6.5 3.91248C7.46667 3.91248 8.41267 4.03474 9.338 4.27927C10.2633 4.5238 11.1507 4.8906 12 5.37966C12.85 4.8906 13.7377 4.5238 14.663 4.27927C15.5883 4.03474 16.534 3.91248 17.5 3.91248C18.3667 3.91248 19.2167 4.01029 20.05 4.20591C20.8833 4.40154 21.6833 4.69498 22.45 5.08623C22.6333 5.16774 22.771 5.29 22.863 5.45302C22.955 5.61604 23.0007 5.78722 23 5.96654V17.753C23 18.1279 22.8377 18.4132 22.513 18.6088C22.1883 18.8044 21.8507 18.8126 21.5 18.6333C20.8833 18.3072 20.2377 18.0545 19.563 17.8752C18.8883 17.6959 18.2007 17.6062 17.5 17.6062C16.75 17.6062 16.0167 17.7001 15.3 17.8879C14.5833 18.0757 13.9 18.3568 13.25 18.7311C13.0667 18.8289 12.871 18.9065 12.663 18.9639C12.455 19.0213 12.234 19.0496 12 19.049ZM14 8.58302C14 8.43631 14.0543 8.28567 14.163 8.13113C14.2717 7.97659 14.3923 7.87454 14.525 7.82498C15.0083 7.66196 15.4917 7.53969 15.975 7.45818C16.4583 7.37667 16.9667 7.33591 17.5 7.33591C17.8333 7.33591 18.1627 7.35646 18.488 7.39754C18.8133 7.43862 19.134 7.49144 19.45 7.55599C19.6 7.5886 19.7293 7.67011 19.838 7.80052C19.9467 7.93094 20.0007 8.07766 20 8.24068C20 8.51782 19.9083 8.72159 19.725 8.85201C19.5417 8.98243 19.3083 9.01503 19.025 8.94982C18.7917 8.90092 18.546 8.8644 18.288 8.84027C18.03 8.81614 17.7673 8.80375 17.5 8.8031C17.0667 8.8031 16.6417 8.84386 16.225 8.92537C15.8083 9.00688 15.4083 9.11284 15.025 9.24326C14.725 9.35737 14.4793 9.34922 14.288 9.21881C14.0967 9.08839 14.0007 8.87646 14 8.58302ZM14 13.9627C14 13.816 14.0543 13.6654 14.163 13.5108C14.2717 13.3563 14.3923 13.2542 14.525 13.2047C15.0083 13.0416 15.4917 12.9194 15.975 12.8379C16.4583 12.7564 16.9667 12.7156 17.5 12.7156C17.8333 12.7156 18.1627 12.7361 18.488 12.7772C18.8133 12.8183 19.134 12.8711 19.45 12.9357C19.6 12.9683 19.7293 13.0498 19.838 13.1802C19.9467 13.3106 20.0007 13.4573 20 13.6204C20 13.8975 19.9083 14.1013 19.725 14.2317C19.5417 14.3621 19.3083 14.3947 19.025 14.3295C18.7917 14.2806 18.546 14.2441 18.288 14.22C18.03 14.1958 17.7673 14.1834 17.5 14.1828C17.0667 14.1828 16.6417 14.2196 16.225 14.2933C15.8083 14.367 15.4083 14.4687 15.025 14.5985C14.725 14.7126 14.4793 14.7087 14.288 14.5868C14.0967 14.4648 14.0007 14.2568 14 13.9627ZM14 11.2729C14 11.1262 14.0543 10.9755 14.163 10.821C14.2717 10.6664 14.3923 10.5644 14.525 10.5148C15.0083 10.3518 15.4917 10.2295 15.975 10.148C16.4583 10.0665 16.9667 10.0258 17.5 10.0258C17.8333 10.0258 18.1627 10.0463 18.488 10.0874C18.8133 10.1285 19.134 10.1813 19.45 10.2458C19.6 10.2784 19.7293 10.36 19.838 10.4904C19.9467 10.6208 20.0007 10.7675 20 10.9305C20 11.2077 19.9083 11.4114 19.725 11.5419C19.5417 11.6723 19.3083 11.7049 19.025 11.6397C18.7917 11.5908 18.546 11.5542 18.288 11.5301C18.03 11.506 17.7673 11.4936 17.5 11.4929C17.0667 11.4929 16.6417 11.5337 16.225 11.6152C15.8083 11.6967 15.4083 11.8027 15.025 11.9331C14.725 12.0472 14.4793 12.0391 14.288 11.9087C14.0967 11.7782 14.0007 11.5663 14 11.2729Z"
+              fill="#FFFFFF" />
           </svg>
-          <div
-            class="left-[15px] top-[28.29px] absolute text-center justify-start text-[#ffffff] text-[10px] font-normal font-['Helvetica']"
-          >
-            Profile
-          </div>
-        </div>
-        <div
-          data-selected="false"
-          class="w-14 h-10 left-[215px] top-[12px] absolute hover:cursor-pointer bg-[#975de8] rounded-full hover:cursor-pointer"
-          onclick="window.location.href='https://daemondesignclass.onrender.com/quests.html'"
-        >
-          <div
-            class="left-[13px] top-[28.29px] absolute text-center justify-start text-[#ffffff] text-[10px] font-normal font-['Helvetica']"
-          >
-            Quests
-          </div>
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-[24px] h-[24px] left-[5px] top-[3px] absolute ml-[12px]"
-          >
-            <path
-              d="M9.725 14L12 12.625L14.275 14L13.675 11.4L15.675 9.675L13.05 9.45L12 7L10.95 9.45L8.325 9.675L10.325 11.4L9.725 14ZM5 21V3H19V21L12 18L5 21ZM7 17.95L12 15.8L17 17.95V5H7V17.95Z"
-              fill="#FFFFFF"
-            />
-          </svg>
-        </div>
-        <div
-          data-selected="true"
-          class="left-[121px] top-[12px] w-[60px] h-[40px]  pt-8  absolute hover:cursor-pointer"
-          onclick="window.location.href='https://daemondesignclass.onrender.com/home.html'"
-        >
-          <svg
-            width="22"
-            height="23"
-            viewBox="0 0 22 23"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 top-[5px] absolute ml-[21px]"
-          >
-            <path
-              d="M14.7644 11.3917L11.0963 7.56258L16.5068 1.91456H20.175V5.74373L14.7644 11.3917ZM3.25552 20.7732L2.10921 19.5766C1.9258 19.3851 1.8341 19.1618 1.8341 18.9065C1.8341 18.6512 1.9258 18.4278 2.10921 18.2364L4.76864 15.4363L2.75114 13.3303L3.39308 12.6602C3.74461 12.2932 4.18021 12.1097 4.69987 12.1097C5.21952 12.1097 5.65512 12.2932 6.00666 12.6602L6.09836 12.7798L7.19881 11.6311L10.867 15.4602L9.76654 16.609L9.88117 16.7047C10.2327 17.0717 10.4085 17.5264 10.4085 18.0689C10.4085 18.6113 10.2327 19.066 9.88117 19.433L9.23924 20.1031L7.22174 17.9971L4.53938 20.7732C4.35597 20.9647 4.142 21.0604 3.89745 21.0604C3.65291 21.0604 3.43893 20.9647 3.25552 20.7732ZM20.1521 19.7202L18.8682 21.0604L8.18464 9.95581C7.43572 10.4345 6.61802 10.6221 5.73154 10.5187C4.84506 10.4153 4.08086 10.0282 3.43893 9.3575L2.86577 8.7592L3.48478 8.08909C3.88217 7.65831 4.36759 7.44707 4.94105 7.45536C5.51451 7.46366 5.99962 7.6749 6.3964 8.08909L8.18464 9.95581C8.3222 9.87604 8.45211 9.78446 8.57438 9.68107C8.69666 9.57768 8.81893 9.46185 8.9412 9.33357C9.04819 9.22189 9.14754 9.10223 9.23924 8.97459C9.33095 8.84695 9.41501 8.71931 9.49143 8.59167L7.70319 6.72495C6.9237 5.92721 5.99901 5.52834 4.92913 5.52834C3.85924 5.52834 2.94984 5.93519 2.20092 6.74888L1.58191 7.39506L0.917053 6.70102L6.41933 0.981201L8.9412 3.61375C9.59842 4.29981 9.96921 5.10553 10.0536 6.03091C10.1379 6.9563 9.95056 7.80988 9.49143 8.59167L16.1171 15.5081C15.9948 15.0933 15.9184 14.6625 15.8878 14.2158C15.8573 13.769 15.8802 13.3223 15.9566 12.8756C16.0483 12.3969 16.2051 11.9502 16.427 11.5353C16.649 11.1205 16.9088 10.7335 17.2065 10.3741C17.5043 10.0148 17.8442 9.68777 18.2263 9.39292C18.6084 9.09808 19.0058 8.83897 19.4184 8.6156C20.0145 9.38144 20.473 10.2191 20.794 11.1285C21.115 12.0379 21.1838 12.9713 21.0003 13.9286C20.8322 14.7423 20.5076 15.4682 20.0264 16.1064C19.5453 16.7446 18.9605 17.295 18.2721 17.7577L20.1521 19.7202Z"
-              fill="#FFFFFF"
-            />
-          </svg>
-          <div
-            class="left-[5px] top-[28.29px] absolute text-center justify-start text-[#FFFFFF] text-[10px] font-bold font-['Helvetica']"
-          >
-            Adventure
-          </div>
-        </div>
-        <div
-          data-selected="false"
-          class="w-[24px] h-[24px] left-[307px] top-[12px] absolute hover:cursor-pointer"
-          onclick="window.location.href='https://daemondesignclass.onrender.com/dictionary.html'"
-        >
-          <div
-            class="left-[7px] top-[28.29px] absolute text-center justify-start text-[#ffffff] text-[10px] font-normal font-['Helvetica']"
-          >
-            Dictionary
-          </div>
-          <div class="w-6 h-6 left-[17px] top-[1px] absolute">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-[24px] h-[24px] left-[1px] top-[3.91px] absolute"
-            >
-              <path
-                d="M6.5 15.65C7.28334 15.65 8.046 15.7357 8.788 15.9072C9.53 16.0787 10.2673 16.3353 11 16.677V7.04248C10.3167 6.65123 9.59167 6.35779 8.825 6.16216C8.05834 5.96654 7.28334 5.86873 6.5 5.86873C5.9 5.86873 5.304 5.92578 4.712 6.0399C4.12 6.15401 3.54933 6.32518 3 6.55341V16.2369C3.58333 16.0412 4.16267 15.8945 4.738 15.7967C5.31333 15.6989 5.90067 15.65 6.5 15.65ZM13 16.677C13.7333 16.3347 14.471 16.0781 15.213 15.9072C15.955 15.7364 16.7173 15.6506 17.5 15.65C18.1 15.65 18.6877 15.6989 19.263 15.7967C19.8383 15.8945 20.4173 16.0412 21 16.2369V6.55341C20.45 6.32518 19.879 6.15401 19.287 6.0399C18.695 5.92578 18.0993 5.86873 17.5 5.86873C16.7167 5.86873 15.9417 5.96654 15.175 6.16216C14.4083 6.35779 13.6833 6.65123 13 7.04248V16.677ZM12 19.049C11.7667 19.049 11.5457 19.0206 11.337 18.9639C11.1283 18.9071 10.9327 18.8295 10.75 18.7311C10.1 18.3561 9.41667 18.0751 8.7 17.8879C7.98334 17.7008 7.25 17.6069 6.5 17.6062C5.8 17.6062 5.11267 17.6959 4.438 17.8752C3.76333 18.0545 3.11733 18.3072 2.5 18.6333C2.15 18.8126 1.81267 18.8044 1.488 18.6088C1.16333 18.4132 1.00067 18.1279 1 17.753V5.96654C1 5.78722 1.046 5.61604 1.138 5.45302C1.23 5.29 1.36733 5.16774 1.55 5.08623C2.31667 4.69498 3.11667 4.40154 3.95 4.20591C4.78333 4.01029 5.63334 3.91248 6.5 3.91248C7.46667 3.91248 8.41267 4.03474 9.338 4.27927C10.2633 4.5238 11.1507 4.8906 12 5.37966C12.85 4.8906 13.7377 4.5238 14.663 4.27927C15.5883 4.03474 16.534 3.91248 17.5 3.91248C18.3667 3.91248 19.2167 4.01029 20.05 4.20591C20.8833 4.40154 21.6833 4.69498 22.45 5.08623C22.6333 5.16774 22.771 5.29 22.863 5.45302C22.955 5.61604 23.0007 5.78722 23 5.96654V17.753C23 18.1279 22.8377 18.4132 22.513 18.6088C22.1883 18.8044 21.8507 18.8126 21.5 18.6333C20.8833 18.3072 20.2377 18.0545 19.563 17.8752C18.8883 17.6959 18.2007 17.6062 17.5 17.6062C16.75 17.6062 16.0167 17.7001 15.3 17.8879C14.5833 18.0757 13.9 18.3568 13.25 18.7311C13.0667 18.8289 12.871 18.9065 12.663 18.9639C12.455 19.0213 12.234 19.0496 12 19.049ZM14 8.58302C14 8.43631 14.0543 8.28567 14.163 8.13113C14.2717 7.97659 14.3923 7.87454 14.525 7.82498C15.0083 7.66196 15.4917 7.53969 15.975 7.45818C16.4583 7.37667 16.9667 7.33591 17.5 7.33591C17.8333 7.33591 18.1627 7.35646 18.488 7.39754C18.8133 7.43862 19.134 7.49144 19.45 7.55599C19.6 7.5886 19.7293 7.67011 19.838 7.80052C19.9467 7.93094 20.0007 8.07766 20 8.24068C20 8.51782 19.9083 8.72159 19.725 8.85201C19.5417 8.98243 19.3083 9.01503 19.025 8.94982C18.7917 8.90092 18.546 8.8644 18.288 8.84027C18.03 8.81614 17.7673 8.80375 17.5 8.8031C17.0667 8.8031 16.6417 8.84386 16.225 8.92537C15.8083 9.00688 15.4083 9.11284 15.025 9.24326C14.725 9.35737 14.4793 9.34922 14.288 9.21881C14.0967 9.08839 14.0007 8.87646 14 8.58302ZM14 13.9627C14 13.816 14.0543 13.6654 14.163 13.5108C14.2717 13.3563 14.3923 13.2542 14.525 13.2047C15.0083 13.0416 15.4917 12.9194 15.975 12.8379C16.4583 12.7564 16.9667 12.7156 17.5 12.7156C17.8333 12.7156 18.1627 12.7361 18.488 12.7772C18.8133 12.8183 19.134 12.8711 19.45 12.9357C19.6 12.9683 19.7293 13.0498 19.838 13.1802C19.9467 13.3106 20.0007 13.4573 20 13.6204C20 13.8975 19.9083 14.1013 19.725 14.2317C19.5417 14.3621 19.3083 14.3947 19.025 14.3295C18.7917 14.2806 18.546 14.2441 18.288 14.22C18.03 14.1958 17.7673 14.1834 17.5 14.1828C17.0667 14.1828 16.6417 14.2196 16.225 14.2933C15.8083 14.367 15.4083 14.4687 15.025 14.5985C14.725 14.7126 14.4793 14.7087 14.288 14.5868C14.0967 14.4648 14.0007 14.2568 14 13.9627ZM14 11.2729C14 11.1262 14.0543 10.9755 14.163 10.821C14.2717 10.6664 14.3923 10.5644 14.525 10.5148C15.0083 10.3518 15.4917 10.2295 15.975 10.148C16.4583 10.0665 16.9667 10.0258 17.5 10.0258C17.8333 10.0258 18.1627 10.0463 18.488 10.0874C18.8133 10.1285 19.134 10.1813 19.45 10.2458C19.6 10.2784 19.7293 10.36 19.838 10.4904C19.9467 10.6208 20.0007 10.7675 20 10.9305C20 11.2077 19.9083 11.4114 19.725 11.5419C19.5417 11.6723 19.3083 11.7049 19.025 11.6397C18.7917 11.5908 18.546 11.5542 18.288 11.5301C18.03 11.506 17.7673 11.4936 17.5 11.4929C17.0667 11.4929 16.6417 11.5337 16.225 11.6152C15.8083 11.6967 15.4083 11.8027 15.025 11.9331C14.725 12.0472 14.4793 12.0391 14.288 11.9087C14.0967 11.7782 14.0007 11.5663 14 11.2729Z"
-                fill="#FFFFFF"
-              />
-            </svg>
-          </div>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
